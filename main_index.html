@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ni-Just System</title>
+	<link rel="stylesheet" href="css/samples.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="toolbarconfigurator/lib/codemirror/neo.css">
+</head>
+<body id="main">
+<main>
+	<div class="adjoined-top"  style="margin-top:0em;padding-top:0px">
+		<div class="grid-container">
+			<div class="content grid-width-100">
+				<h1 style="font-family:Monotype corsiva;font-size:40px">
+					<img src="img/coat.png" onerror="this.src='img/coat.png'; this.onerror=null;" alt="CKEditor Sample" style="height:100px;position:relative;bottom:-5px">Ni-JUST System
+				</h1>
+				<p style="font-size:13px">
+					A Speech-to-text System for the Nigerian Judiciary Sytem 
+				</p>
+			</div>
+		</div>
+	</div>
+	<form action="save_output.php" method="POST">
+		<div class="adjoined-bottom">
+			<div class="grid-container">
+				<div class="grid-width-100 grid-height-100" style="">
+					<input type="text" name="title" placeholder="Enter Document Title" class="form form-control" required /><br/>
+					<textarea id="editor" name="editor">
+					</textarea>
+				</div>
+			</div>
+		</div>
+		<p style="margin-top:1em" align="center">
+
+					<a role="button" id="start-record-btn" title="Start Recording" class="btn btn-primary"><span class="fa fa-microphone"></span> Start Recognition</a>
+					<a role="button" id="pause-record-btn" title="Stop Recording" class="btn btn-danger"><span class="fa fa-stop"></span> Stop Recognition</a>
+					<button id="save-note-btn" title="Save Document/Transcription" class="btn btn-success" type="submit"><span class="fa fa-save"></span> Save Output</button>   
+					<a href="documents.php" title="All Saved Documents" class="btn btn-default"><span class="fa fa-save"></span> Manage Saved Dictations</a>   
+					<p id="recording-instructions" align="center" style="">Press the <strong>Start Recognition</strong> button and allow access to start Recogntion.</p>
+					<!--h3>My Notes</h3-->
+					<!--ul id="notes">
+						<li>
+							<p class="no-notes">You don't have any notes.</p>
+						</li>
+					</ul-->
+
+		</p>
+	</form>
+</main>
+
+<footer class="footer-a grid-container">
+	<div class="grid-container">
+		<p class="grid-width-100" id="copy" style="font-size:13px">
+			Copyright &copy; 2018, A development of a Speech-To-Text System for the Nigerian Judiciary - A Project work of Ore Juwon Christopher (14/52HA106). All rights reserved.
+		</p>
+	</div>
+</footer>
+
+        <script src="jquery.min.js"></script>
+	<script src="ckeditor.js"></script>
+	<!--script src="js/sample.js"></script-->
+        <script src="adapters/jquery.js"></script>
+        <script src="script.js"></script>
+<script>
+$( 'textarea#editor' ).ckeditor();
+//	initSample();
+</script>
+</body>
+</html>
