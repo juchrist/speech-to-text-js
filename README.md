@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CKEditor 4
 ==========
 
@@ -37,3 +38,7 @@ To test your installation, just call the following page at your website:
 For example:
 
 	http://www.example.com/ckeditor/samples/index.html
+=======
+# speech-to-text-js
+A Prototype Speech to Text System built for the Nigeria Judiaciary with Javascript Web Speech API. The Prototype SDLC was employed in the development.
+>>>>>>> 0d86f31d841ada06b2b89414278b42bae1114505
